@@ -1,4 +1,4 @@
-This is a Research project that I completed during CS 212 Data Science Ethics at UC Riverside. It focuses on reducing the prevalent bias in ML algorithms. Following is the resume description.
+This is a Research project that I completed during CS 212 Data Science Ethics at UC Riverside. It focuses on reducing the prevalent bias in COMPAS Dataset. Following is the resume description.
 
 1. Identified and quantified inherent bias within the COMPAS dataset, a critical tool in criminal justice, by analyzing recidivism risk predictions across different demographic groups. This initial ethical assessment revealed significant disparities, underscoring the potential for discriminatory outcomes if left unaddressed.
 
@@ -9,4 +9,6 @@ This is a Research project that I completed during CS 212 Data Science Ethics at
 4. Evaluated the effectiveness of Exponentiated Gradient Reduction in optimizing for fairness metrics while preserving predictive performance. This advanced technique achieved a 5% improvement in demographic parity without a significant drop in overall accuracy (less than 1%), demonstrating a commitment to both ethical considerations and practical utility.
 
 5. Conducted rigorous post-mitigation analysis, continuously monitoring fairness metrics like equalized odds and predictive parity to ensure the AI model adhered to ethical standards throughout the development lifecycle. This proactive approach guaranteed ongoing accountability and highlighted the project's dedication to responsible AI implementation in a sensitive domain.
+
+Link to the dataset: https://www.kaggle.com/datasets/danofer/compass
 
