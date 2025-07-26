@@ -1,3 +1,5 @@
+# FairPredict- An Ethical AI Approach to Mitigating Bias in Criminal Justice Risk-Assessment
+
 This is a Research project that I completed during CS 212 Data Science Ethics at UC Riverside. It focuses on reducing the prevalent bias in COMPAS Dataset. Following is the resume description.
 
 ## 🧠 Purpose
