@@ -5,10 +5,13 @@ This is a Research project that I completed during CS 212 Data Science Ethics at
 ## 🧠 Purpose
 
 Analyze and reduce algorithmic bias in the COMPAS dataset—used in criminal justice risk assessment—through responsible data science practices, including:
-Ethical auditing of risk prediction outcomes
-SMOTE for resampling underrepresented groups
-Threshold tuning for parity in predictions
-Fairness-aware training using Exponentiated Gradient Reduction
+1. Ethical auditing of risk prediction outcomes
+  
+2. SMOTE for resampling underrepresented groups
+
+3. Threshold tuning for parity in predictions
+   
+4. Fairness-aware training using Exponentiated Gradient Reduction
 
 ## 🔄 Steps:
 
