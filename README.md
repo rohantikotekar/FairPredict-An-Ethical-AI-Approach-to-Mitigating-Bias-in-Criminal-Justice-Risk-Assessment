@@ -43,16 +43,16 @@ Analyze and reduce algorithmic bias in the COMPAS dataset—used in criminal jus
 
 ## 📈 Impact
 
-  ⚖️ Significantly reduced racial bias in risk predictions
-  📉 Lowered false positive rate disparity by 10%
-  📊 Improved demographic parity without sacrificing model performance
-  🔍 Reinforced accountability in criminal justice AI tools
+  1. ⚖️ Significantly reduced racial bias in risk predictions
+  2. 📉 Lowered false positive rate disparity by 10%
+  3. 📊 Improved demographic parity without sacrificing model performance
+  4. 🔍 Reinforced accountability in criminal justice AI tools
 
 ## 🧩 Future Improvements
 
-  Incorporate counterfactual fairness analysis
-  Build real-time fairness dashboards
-  Extend research to other high-stakes domains like hiring or lending
+  1. Incorporate counterfactual fairness analysis
+  2. Build real-time fairness dashboards
+  3. Extend research to other high-stakes domains like hiring or lending
 
 
 
