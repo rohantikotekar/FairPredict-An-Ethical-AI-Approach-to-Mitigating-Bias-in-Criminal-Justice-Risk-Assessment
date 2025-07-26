@@ -1,14 +1,54 @@
 This is a Research project that I completed during CS 212 Data Science Ethics at UC Riverside. It focuses on reducing the prevalent bias in COMPAS Dataset. Following is the resume description.
 
-1. Identified and quantified inherent bias within the COMPAS dataset, a critical tool in criminal justice, by analyzing recidivism risk predictions across different demographic groups. This initial ethical assessment revealed significant disparities, underscoring the potential for discriminatory outcomes if left unaddressed.
+## 🧠 Purpose
 
-2. Applied SMOTE resampling techniques to tackle the problem of class imbalance in the COMPAS dataset, which disproportionately affected minority groups. This action led to a 12% improvement in the representation of minority individuals in the training data, fostering a more equitable learning environment for the AI model.
+Analyze and reduce algorithmic bias in the COMPAS dataset—used in criminal justice risk assessment—through responsible data science practices, including:
+Ethical auditing of risk prediction outcomes
+SMOTE for resampling underrepresented groups
+Threshold tuning for parity in predictions
+Fairness-aware training using Exponentiated Gradient Reduction
 
-3. Developed and implemented a threshold adjustment strategy to address disparities in prediction accuracy across racial groups. This intervention resulted in a 10% reduction in the difference in false positive rates between majority and minority groups, directly enhancing the fairness and ethical implications of the model's deployment.
+## 🔄 Steps:
 
-4. Evaluated the effectiveness of Exponentiated Gradient Reduction in optimizing for fairness metrics while preserving predictive performance. This advanced technique achieved a 5% improvement in demographic parity without a significant drop in overall accuracy (less than 1%), demonstrating a commitment to both ethical considerations and practical utility.
+Bias Identification
+Analyzed COMPAS predictions across race and gender groups.
+Identified significant disparities in false positive rates and predictive parity.
+Class Imbalance Handling (SMOTE)
+Applied SMOTE to synthetically balance classes.
+Improved minority group representation in training data by 12%.
+Threshold Adjustment
+Tuned decision thresholds separately per demographic group.
+Reduced the false positive gap across groups by 10%.
+Fairness-Aware Optimization
+Used Exponentiated Gradient Reduction to optimize for fairness.
+Achieved 5% boost in demographic parity with <1% accuracy loss.
+Post-Mitigation Monitoring
+Evaluated and tracked fairness metrics:
+Equalized Odds
+Predictive Parity
+Ensured ethical compliance throughout the pipeline.
 
-5. Conducted rigorous post-mitigation analysis, continuously monitoring fairness metrics like equalized odds and predictive parity to ensure the AI model adhered to ethical standards throughout the development lifecycle. This proactive approach guaranteed ongoing accountability and highlighted the project's dedication to responsible AI implementation in a sensitive domain.
+## 🧰 Tech Stack
 
-Link to the dataset: https://www.kaggle.com/datasets/danofer/compass
+Python – Data processing & model development
+Jupyter Notebook – Experimentation & visualization
+Pandas, NumPy, Scikit-learn – Data wrangling & ML
+Imbalanced-learn – SMOTE resampling
+Fairlearn – Fairness optimization & evaluation
+Matplotlib / Seaborn – Visualizations
+
+## 📈 Impact
+
+⚖️ Significantly reduced racial bias in risk predictions
+📉 Lowered false positive rate disparity by 10%
+📊 Improved demographic parity without sacrificing model performance
+🔍 Reinforced accountability in criminal justice AI tools
+
+## 🧩 Future Improvements
+
+Incorporate counterfactual fairness analysis
+Build real-time fairness dashboards
+Extend research to other high-stakes domains like hiring or lending
+
+
 
