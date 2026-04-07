@@ -1,58 +1,42 @@
-# FairPredict- An Ethical AI Approach to Mitigating Bias in Criminal Justice Risk-Assessment
+# FairPredict
+### An Ethical AI Approach to Mitigating Bias in Criminal Justice Risk Assessment
 
-This is a Research project that I completed during CS 212 Data Science Ethics at UC Riverside. It focuses on reducing the prevalent bias in COMPAS Dataset. Following is the resume description.
+---
 
-## 🧠 Purpose
+## Problem
 
-Analyze and reduce algorithmic bias in the COMPAS dataset—used in criminal justice risk assessment—through responsible data science practices, including:
-  1. Ethical auditing of risk prediction outcomes
-  2. SMOTE for resampling underrepresented groups
-  3. Threshold tuning for parity in predictions  
-  4. Fairness-aware training using Exponentiated Gradient Reduction
+AI tools like COMPAS are used across the U.S. criminal justice system to predict recidivism risk — influencing bail, sentencing, and parole decisions. Studies have shown these tools disproportionately flag Black defendants as high-risk, even when controlling for actual reoffending rates. The root cause is historical training data that encodes decades of systemic bias. When that data feeds a model, the model doesn't just reflect bias — it amplifies it at scale.
 
-## 🔄 Steps:
+---
 
-  1. Bias Identification
-  2. Analyzed COMPAS predictions across race and gender groups.
-  3. Identified significant disparities in false positive rates and predictive parity.
-  4. Class Imbalance Handling (SMOTE)
-  5. Applied SMOTE to synthetically balance classes.
-  6. Improved minority group representation in training data by 12%.
-  7. Threshold Adjustment
-  8. Tuned decision thresholds separately per demographic group.
-  9. Reduced the false positive gap across groups by 10%.
-  10. Fairness-Aware Optimization
-  11. Used Exponentiated Gradient Reduction to optimize for fairness.
-  12. Achieved 5% boost in demographic parity with <1% accuracy loss.
-  13. Post-Mitigation Monitoring
-  14. Evaluated and tracked fairness metrics:
-  15. Equalized Odds
-  16. Predictive Parity
-  17. Ensured ethical compliance throughout the pipeline.
+## Solution
 
+FairPredict is a fairness-aware machine learning pipeline built to detect and reduce racial and demographic bias in recidivism prediction. Rather than treating accuracy as the only goal, it explicitly optimizes for both predictive performance and fairness — measuring outcomes across demographic groups using established metrics like **demographic parity**, **equalized odds**, and **disparate impact**.
 
+---
 
-## 🧰 Tech Stack
+## Implementation
 
-  1. Python – Data processing & model development
-  2. Jupyter Notebook – Experimentation & visualization
-  3. Pandas, NumPy, Scikit-learn – Data wrangling & ML
-  4. Imbalanced-learn – SMOTE resampling
-  5. Fairlearn – Fairness optimization & evaluation
-  6. Matplotlib / Seaborn – Visualizations
+- **Dataset:** COMPAS recidivism dataset (ProPublica)
+- **Bias Detection:** Disparate impact analysis across race and gender subgroups
+- **Mitigation Techniques:**
+  - Pre-processing: Dataset reweighing and resampling
+  - In-processing: Fairness-constrained model training
+  - Post-processing: Threshold adjustment per demographic group
+- **Fairness Metrics:** Demographic parity, equalized odds, equal opportunity
+- **Models:** Logistic Regression, Random Forest, evaluated with fairness-accuracy tradeoff analysis
+- **Toolkit:** IBM AI Fairness 360 (AIF360), scikit-learn, Python
 
-## 📈 Impact
+---
 
-  1. ⚖️ Significantly reduced racial bias in risk predictions
-  2. 📉 Lowered false positive rate disparity by 10%
-  3. 📊 Improved demographic parity without sacrificing model performance
-  4. 🔍 Reinforced accountability in criminal justice AI tools
+## Future Goals
 
-## 🧩 Future Improvements
+- Extend bias mitigation to intersectional subgroups (e.g., race × gender)
+- Benchmark against additional criminal justice datasets beyond COMPAS
+- Build an explainability layer so predictions are interpretable by judges and attorneys
+- Explore real-time bias monitoring for deployed models
+- Contribute findings toward policy recommendations for ethical AI use in public sector decisions
 
-  1. Incorporate counterfactual fairness analysis
-  2. Build real-time fairness dashboards
-  3. Extend research to other high-stakes domains like hiring or lending
+---
 
-
-
+> *FairPredict is a research project. It is not intended for deployment in real-world criminal justice settings without extensive legal, ethical, and domain expert review.*
