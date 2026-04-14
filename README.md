@@ -38,5 +38,3 @@ FairPredict is a fairness-aware machine learning pipeline built to detect and re
 - Contribute findings toward policy recommendations for ethical AI use in public sector decisions
 
 ---
-
-> *FairPredict is a research project. It is not intended for deployment in real-world criminal justice settings without extensive legal, ethical, and domain expert review.*
